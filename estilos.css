@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+:root{
+    --Cyan: hsl(180, 66%, 49%);
+    --Dark-Violet: hsl(257, 27%, 26%);
+    --Gray: hsl(0, 0%, 75%);
+    --Very-Dark-Blue: hsl(255, 11%, 22%);
+    --Very-Dark-Violet: hsl(260, 8%, 14%)
+}
+
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+font-family: "Poppins";
+}
+
+.main_header{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.header{
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.header__list{
+    display: flex;
+    list-style: none;
+    margin-left: 3.5rem;
+    gap: 2rem;
+    font-family: "Poppins";
+    font-weight: 500px;
+    font-size: 15px;
+}
+
+.header__link{
+    text-decoration: none;
+    color: var(--Gray);
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
+.header__list :hover{
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
+.button_header{
+    margin-left: auto;
+    gap: 5rem;
+}
+
+.btn_Sign_Up :hover{
+    font-size: 50px;
+}
+
+.btn_Sign_Up{
+    background-color: var(--Cyan);
+    padding: 7px 16px;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+}
+
+.btn_login{
+    padding: 7px 1rem;
+    border-radius: 1rem;
+    color: var(--Gray);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+}
+
+main{
+    margin: 0px auto;
+}
+.main{
+    display: flex;
+    margin: 29px 0px 60px 147px;
+    
+}
+.texto{
+    margin: auto;
+}
+
+.parraf{
+    font-family: "Poppins";
+    font-size: 18px;
+    padding: 0px 0px 36px;
+}
+
+.main_img{
+    padding-left: 5rem;
+}
+.title{
+    font-family: "Poppins";
+    font-size: 67px;
+}
+
+.btn_main{
+    background-color: var(--Cyan);
+    padding: 9px 19px;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.url_shorter{
+    background-image: linear-gradient(to bottom, white 50%,#EFF1F7 50%);
+    height: 146px;
+}
+
+.box_shorter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 9px auto;
+    background-image: url(../url-shortening-api-master/images/bg-shorten-desktop.svg);
+    background-color: var(--Dark-Violet);
+    height: 132px;
+    width: 1108px;
+    border-radius: 10px;
+}
+
+.url_input{
+    padding: 18px;
+    border-radius: 5px;
+    width: 600px;
+    font-size: 13px;
+    outline: none;
+}
+
+.url_submit{
+    background-color: var(--Cyan);
+    padding: 18px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    border-color: var(--Cyan);
+    cursor: pointer;
+}
+
+.Settings_main{
+    background-color: #EFF1F7;
+    height: 13rem;
+}
+
+.Settings_title{
+    min-height: 30vh;
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	padding: 8rem 0px 0px 0px;
+}
+
+.Settings_title p{
+   color: var(--Gray);
+}
+
+.cards_image{
+    position: absolute;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 50%;
+	background-color: var(--Very-Dark-Blue);
+	padding: 1rem;
+	top: -2.5rem;
+	left: 1rem;
+}
+
+.cards1, .cards2, .cards3{
+    background-color: white;
+    width: 30%;
+	position: relative;
+	padding: 2rem 2rem;
+    min-height: 20vh;
+    width: 22rem;
+    
+}
+
+.cards_card p{
+    color: var(--Gray);
+    margin-top: 6px;
+}
+
+.cards_card h4{
+    color: var(--Very-Dark-Blue);
+    margin-top: 10px;
+}
+
+.cards_main{
+    display: flex;
+    align-items: center;
+    background-color: #EFF1F7;
+    justify-content: space-around;
+    padding: 1px 200px;
+    height: 25rem;
+}
+
+.cards2{
+    transform: translateY(2rem);
+}
+
+.cards3 {
+    transform: translateY(4rem);
+}
+
+.cards_line{
+    position: absolute;
+    height: 15px;
+    width: 700px;
+    background-color: var(--Cyan);
+    transform: translateX(20rem)
+}
+
+.banner{
+    height: 219px;
+    width: 100%;
+    background-image: url(./images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Dark-Violet);
+}
+
+.banner h2{
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+    font-size: 40px;
+}
+
+.banner button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 27px auto;
+    background-color: var(--Cyan);
+    padding: 9px 19px;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Poppins";
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer_main{
+    min-width: 100%;
+    background-color: var(--Very-Dark-Blue);
+    padding: 3rem 0rem;
+	display: flex;
+	justify-content: space-between;
+    margin: auto;
+    padding: 54px 100px;
+    color: white;
+
+}
+
+.footer_item{
+    max-width: var(--ancho-maximo);
+    list-style: none;
+    display: inline-flexbox;
+}
+
+.footer_redes{
+    display: flex;
+    gap: 20px;
+}
+
+.footer_item :hover{
+    color: var(--Cyan);
+}
+
+.footer_redes :hover{
+    fill: var(--Cyan);
+}
